@@ -42,7 +42,7 @@ router.get('/:page', async (req, res) => {
     const skip = limit * (page - 1)
     const notes = await Note.find().skip(skip).limit(limit)
     const total = await Note.countDocuments()
-    const isOver = (total - (limit * (page + 1))) < 0
+    const isOver = (total - (limit * (page))) <= 0
     return res.status(200).json({notes, total, isOver})
 })
 
