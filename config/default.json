@@ -1,6 +1,5 @@
 {
   "serverPort": 8080,
   "mongoUri": "mongodb+srv://root:root123@cluster0.kocsa.mongodb.net/notes?retryWrites=true&w=majority",
-  "jwtSecret": "SecretSecretKey",
   "baseUrl": "http://localhost:8080"
 }
