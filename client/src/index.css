@@ -1,0 +1,145 @@
+@import "~bootstrap";
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Ubuntu', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eee;
+}
+
+#root {
+  min-width: 80%;
+  min-height: 60%;
+  display: flex;
+}
+
+.app-container {
+  min-width: 100%;
+  min-height: 100%;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 1rem 0;
+}
+.page-wrapper {
+  height: 100%;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+.loader {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  width: 40%;
+  padding: 0;
+  margin: 0;
+}
+
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(100, 100, 100, .5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  width: 60%;
+  height: 600px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: initial;
+}
+.modal-header {
+  font-size: 32px;
+  font-weight: 500;
+  width: 100%;
+  border: unset;
+}
+.modal-content {
+  flex-grow: 1;
+  width: 100%;
+  overflow: auto;
+  border: unset;
+}
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  border: unset;
+}
+
+.notes-list {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+}
+.note {
+  display: flex;
+  margin-top: 10px;
+}
+.note-image {
+  max-width: 120px;
+  max-height: 120px;
+}
+.note-wrap {
+  flex-grow: 1;
+  padding: 10px;
+}
+.note-image-wrap {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eee;
+  border-radius: 5px;
+}
+.note-title {
+  font-weight: 500;
+}
+.pagination {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
